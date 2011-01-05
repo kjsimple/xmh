@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.gydoc.xmh.domain">
+  <class name="AccountClassification" table="accountclassification">
+    <id name="id" type="long" column="xmh_id">
+      <generator class="identity" />
+    </id>
+    <many-to-one name="parent" column="parentId" />
+    <set name="children" lazy="false" inverse="true" sort="com.gydoc.xmh.domain.ACComparator">
+      <key column="parentId" />
+      <one-to-many class="AccountClassification" />
+    </set>
+    <property name="name" />
+    <property name="code" />
+    <one-to-one name="ledger" property-ref="accountClassification" />
+  </class>
+</hibernate-mapping>

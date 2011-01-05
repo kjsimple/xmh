@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project default="run" basedir=".">
+  
+  <property environment="env" />
+  <property file="build.properties" />
+  <condition property="build.mode" value="dev" else="pro">
+    <equals arg1="${env.bm}" arg2="dev" casesensitive="false" />
+  </condition>
+  <condition property="build.dir.deleteBeforeBegin">
+    <equals arg1="${build.mode}" arg2="pro" casesensitive="false" />
+  </condition>
+  <property file="build-${build.mode}.properties" />
+
+  <target name="init">
+    <echo>
+    build mdoe is : ${build.mode}
+    to change the build mode use : 
+      set bm=MODE (MODE is one of (dev, pro))
+    </echo>
+    <mkdir dir="${build.classes.dir}" />
+  </target>
+  
+  <path id="path.runtime">
+    <fileset dir="${spring.dist.dir}">
+      <include name="org.springframework.aop-3.0.2.RELEASE.jar" />
+      <include name="org.springframework.context-3.0.2.RELEASE.jar" />
+      <include name="org.springframework.beans-3.0.2.RELEASE.jar" />
+      <include name="org.springframework.core-3.0.2.RELEASE.jar" />
+      <include name="org.springframework.asm-3.0.2.RELEASE.jar" />
+      <include name="org.springframework.expression-3.0.2.RELEASE.jar" />
+      <include name="org.springframework.orm-3.0.2.RELEASE.jar" />
+      <include name="org.springframework.transaction-3.0.2.RELEASE.jar" />
+      <include name="org.springframework.jdbc-3.0.2.RELEASE.jar" />
+    </fileset>
+    <fileset dir="${aopalliance.home}">
+      <include name="aopalliance.jar" />
+    </fileset>
+    <fileset dir="${derby.home}">
+      <include name="lib/derbynet.jar" />
+      <include name="lib/derby.jar" />
+    </fileset>
+    <fileset dir="${commons.logging.home}">
+      <include name="commons-logging-api-1.1.1.jar" />
+      <include name="commons-logging-1.1.1.jar" />
+    </fileset>
+    <fileset dir="${log4j.home}">
+      <include name="log4j-1.2.15.jar" />
+    </fileset>
+    <fileset dir="${hibernate.home}">
+      <include name="lib/required/*.jar" />
+      <include name="hibernate3.jar" />
+      <include name="lib/jpa/*.jar" />
+    </fileset>
+    <fileset dir="${slf4j.home}">
+      <include name="slf4j-log4j12-1.5.8.jar" />
+      <include name="slf4j-api-1.5.8.jar" />
+    </fileset>
+  </path>
+  
+  <path id="path.test">
+    <fileset dir="${testng.home}">
+      <include name="testng-5.11-jdk15.jar" />
+    </fileset>
+    <fileset dir="${abbot.home}">
+      <include name="lib/costello.jar" />
+      <include name="lib/abbot.jar" />
+      <include name="lib/junit-3.8.1.jar" />
+    </fileset>
+  </path>
+
+  <target name="compile" depends="init">
+    <mkdir dir="${build.test.classes.dir}" />
+    <mkdir dir="${build.xmh.classes.dir}" />
+    
+    <native2ascii encoding="UTF-8" dest="${source.src.dir}" src="${i18n.dir}">
+      <include name="com/gydoc/xmh/*.properties" />
+    </native2ascii>
+    
+    <copy todir="${build.xmh.classes.dir}">
+      <fileset dir="${source.src.dir}">
+        <include name="**/*.properties" />
+        <include name="**/*.xml" />
+        <include name="db/**/*.sql" />
+      </fileset>
+    </copy>
+    
+    <javac destdir="${build.xmh.classes.dir}" debug="${javac.debug}" debuglevel="${javac.debuglevel}"
+           deprecation="${javac.deprecation}">
+      <src path="${source.src.dir}" />
+      <classpath refid="path.runtime" />
+    </javac>
+    
+    <javac destdir="${build.test.classes.dir}" debug="${javac.debug}" debuglevel="${javac.debuglevel}"
+           deprecation="${javac.deprecation}">
+      <src path="${source.test.dir}" />
+      <classpath refid="path.test" />
+      <classpath refid="path.runtime" />
+      <classpath path="${build.xmh.classes.dir}" />
+    </javac>
+  </target>
+  
+  <target name="makeJars" depends="compile">
+    <mkdir dir="${jars.dir}" />
+    <jar destfile="${xmh.jar}" basedir="${build.xmh.classes.dir}">
+    </jar>
+    <copy todir="${jars.dir}" flatten="true">
+      <path refid="path.runtime" />
+    </copy>
+  </target>
+
+  <target name="makeXmhAllJar" depends="makeJars">
+    <manifestclasspath property="manifest.classpath" jarfile="${xmh.alljar}">
+      <classpath>
+        <fileset dir="${jars.dir}">
+          <include name="*.jar" />
+        </fileset>
+      </classpath>
+    </manifestclasspath>
+    
+    <jar basedir="." destfile="${xmh.alljar}">
+      <exclude name="**" />
+      <manifest>
+        <attribute name="Build-By" value="${build.buildby}" />
+        <attribute name="Implementation-Version" value="${build.version}" />
+        <attribute name="Implementation-Vendor" value="${build.vendor}" />
+        <attribute name="Class-Path" value="${manifest.classpath}" />
+      </manifest>
+    </jar>
+  </target>
+  
+  <target name="run" depends="clean, init, makeJars, makeXmhAllJar">
+    <java fork="true" dir="${build.dir}" classname="com.gydoc.xmh.AppMain" classpath="${xmh.alljar}" />
+  </target>
+
+  <target name="cleanTask">
+    <delete dir="${build.dir}" />
+  </target>
+  
+  <target name="clean" if="build.dir.deleteBeforeBegin">
+    <antcall target="cleanTask" />
+  </target>
+  
+  <target name="fClean" description="force to clean up">
+    <antcall target="cleanTask" />
+  </target>
+  
+</project>

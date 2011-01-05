@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AWTTestScript desc="Verify the component's initial state">
+  <component class="javax.swing.JTextField" id="JTextField Instance" title="Spike test" />
+  <fixture filename="fixture.xml" />
+  <assert component="JTextField Instance" method="getText" value="55" />
+</AWTTestScript>
+

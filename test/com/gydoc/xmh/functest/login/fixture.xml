@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AWTTestScript desc="xmh login tests">
+  <launch args="[]" class="com.gydoc.xmh.AppMain" classpath="" method="main" threaded="true" />
+  <wait args="XMHLoginDialog" class="abbot.tester.ComponentTester" method="assertFrameShowing" />
+</AWTTestScript>
+

@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="All" verbose="1">
+  
+  <test name="Domain">
+    <packages>
+      <package name="com.gydoc.xmh.testutil" />
+      <package name="com.gydoc.xmh.domain"/>
+    </packages>
+  </test>
+  
+</suite>

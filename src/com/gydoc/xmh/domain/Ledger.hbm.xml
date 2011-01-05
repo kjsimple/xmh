@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.gydoc.xmh.domain">
+  <class name="Ledger" table="ledger">
+    <id name="id" type="long" column="xmh_id">
+      <generator class="identity" />
+    </id>
+    <property name="name" unique="true" length="50" />
+    <property name="level" />
+    <property name="c1Part1Len" />
+    <property name="c1Part2Len" />
+    <property name="c2Len" />
+    <property name="c3Len" />
+    <property name="c4Len" />
+    <property name="c5Len" />
+    <property name="c6Len" />
+    <property name="c7Len" />
+    <property name="c8Len" />
+    <property name="c9Len" />
+    <property name="isTemplate" />
+    <many-to-one unique="true" not-null="true" column="acId" name="accountClassification" />
+    <set name="currencies" table="LedgerCurrencies" cascade="all-delete-orphan">
+      <key column="ledgerId" />
+      <many-to-many column="currencyId" unique="true" class="com.gydoc.xmh.domain.Currency" />
+    </set>
+    <set name="users" table="ledgerusers">
+      <key column="ledgerId" />
+      <many-to-many column="userId" unique="true" class="com.gydoc.xmh.domain.User" />
+    </set>
+    <set name="groups" table="ledgerGroups">
+      <key column="ledgerId" />
+      <many-to-many unique="true" class="Group" column="groupId" />
+    </set>
+  </class>
+</hibernate-mapping>

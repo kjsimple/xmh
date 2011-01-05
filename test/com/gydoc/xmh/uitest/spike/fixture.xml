@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AWTTestScript desc="xmh spike launch">
+  <component class="javax.swing.JTextField" id="JTextField Instance" title="Spike test" />
+  <launch args="[]" class="com.gydoc.xmh.Test" classpath="" method="main" />
+  <wait args="abc" class="abbot.tester.ComponentTester" method="assertFrameShowing" />
+</AWTTestScript>
+

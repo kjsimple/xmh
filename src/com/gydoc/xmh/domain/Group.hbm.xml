@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.gydoc.xmh.domain">
+  <class name="Group" table="xmhgroup">
+    <id name="id" type="long" column="xmh_id">
+      <generator class="identity" />
+    </id>
+    <property name="name" />
+    <property name="adminGroup" column="isAdmin" />
+    <many-to-one name="parent" column="parentId" />
+    <set name="children" lazy="false" inverse="true">
+      <key column="parentId" />
+      <one-to-many class="Group" />
+    </set>
+    <set name="users" lazy="false" table="groupUsers">
+      <key column="groupid" />
+      <many-to-many class="User" unique="true" column="userid" />
+    </set>
+    <join table="ledgerGroups" inverse="true">
+      <key column="groupId" />
+      <many-to-one column="ledgerId" name="ledger" not-null="true" />
+    </join>
+  </class>
+</hibernate-mapping>

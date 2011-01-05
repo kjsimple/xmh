@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.url">jdbc:derby:xmh_db</property>
+    <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.EmbeddedDriver</property>
+    <property name="hibernate.connection.username">xmh</property>
+    <property name="hibernate.connection.password">60118791lrigasidog</property>
+
+    <property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property>
+    <property name="hibernate.show_sql">true</property>
+    
+    <mapping resource="com/gydoc/xmh/domain/Ledger.hbm.xml"/>
+    <mapping resource="com/gydoc/xmh/domain/Currency.hbm.xml"/>
+    <mapping resource="com/gydoc/xmh/domain/AppInfo.hbm.xml"/>
+    <mapping resource="com/gydoc/xmh/domain/AccountClassification.hbm.xml"/>
+    <mapping resource="com/gydoc/xmh/domain/User.hbm.xml"/>
+    <mapping resource="com/gydoc/xmh/domain/Group.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
+    

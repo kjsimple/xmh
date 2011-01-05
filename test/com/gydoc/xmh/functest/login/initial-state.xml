@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AWTTestScript desc="Verify the component's initial state">
+  <component class="javax.swing.JButton" id="LoginCancel" name="LoginCancel" title="" />
+  <fixture filename="fixture.xml" />
+  <action args="LoginCancel" desc="Exit System" class="javax.swing.JButton" method="actionClick" />
+</AWTTestScript>

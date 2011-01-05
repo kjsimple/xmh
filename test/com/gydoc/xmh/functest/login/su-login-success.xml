@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AWTTestScript desc="Verify the login in">
+  <component class="javax.swing.JButton" name="Login" id="Login" />
+  <component class="javax.swing.JTextField" id="loginUserName" />
+  <component class="javax.swing.JPasswordField" id="loginPassword" />
+  <fixture filename="fixture.xml" />
+  <sequence>
+    <action args="loginUserName,_sys" method="actionKeyString" />
+    <action args="loginPassword,manager" method="actionKeyString" />
+    <action args="Login" desc="Login" class="javax.swing.JButton" method="actionClick" />
+    <wait args="XMH Main" class="abbot.tester.ComponentTester" method="assertFrameShowing" />
+  </sequence>
+</AWTTestScript>
