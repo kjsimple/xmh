@@ -7,111 +7,12 @@
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.6" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/spring/spring-framework-3.0.2.RELEASE/dist/org.springframework.context-3.0.2.RELEASE.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/tools/spring/spring-framework-3.0.2.RELEASE/dist/org.springframework.beans-3.0.2.RELEASE.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/tools/spring/spring-framework-3.0.2.RELEASE/dist/org.springframework.core-3.0.2.RELEASE.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/tools/spring/spring-framework-3.0.2.RELEASE/dist/org.springframework.asm-3.0.2.RELEASE.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/tools/spring/spring-framework-3.0.2.RELEASE/dist/org.springframework.expression-3.0.2.RELEASE.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://D:/tools/derby/db-derby-10.5.3.0-bin/lib/derby.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/tools/spring/spring-framework-3.0.2.RELEASE/dist/org.springframework.orm-3.0.2.RELEASE.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/tools/spring/spring-framework-3.0.2.RELEASE/dist/org.springframework.transaction-3.0.2.RELEASE.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/tools/spring/spring-framework-3.0.2.RELEASE/dist/org.springframework.jdbc-3.0.2.RELEASE.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/tools/slf4j-1.5.8/slf4j-log4j12-1.5.8.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/tools/slf4j-1.5.8/slf4j-api-1.5.8.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/tools/spring/spring-framework-3.0.2.RELEASE/dist/org.springframework.aop-3.0.2.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -138,7 +39,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/apache/jakarta-commons/logging/commons-logging-1.1.1/commons-logging-api-1.1.1.jar!/" />
+          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.6.0.Final/lib/required/dom4j-1.6.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -147,7 +48,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/apache/jakarta-commons/logging/commons-logging-1.1.1/commons-logging-1.1.1.jar!/" />
+          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.6.0.Final/lib/required/javassist-3.12.0.GA.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -156,7 +57,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/apache/jakarta-commons/log4j/apache-log4j-1.2.15/log4j-1.2.15.jar!/" />
+          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.6.0.Final/lib/required/antlr-2.7.6.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -165,7 +66,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/testng/testng-5.11/testng-5.11-jdk15.jar!/" />
+          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.6.0.Final/lib/required/jta-1.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -174,7 +75,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/abbot/abbot-1.0.2/lib/costello.jar!/" />
+          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.6.0.Final/lib/jpa/hibernate-jpa-2.0-api-1.0.0.Final.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -183,7 +84,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/abbot/abbot-1.0.2/lib/abbot.jar!/" />
+          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.6.0.Final/hibernate3.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -192,7 +93,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/abbot/abbot-1.0.2/lib/junit-3.8.1.jar!/" />
+          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.6.0.Final/lib/required/commons-collections-3.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -201,7 +102,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.5.0-Final/lib/required/antlr-2.7.6.jar!/" />
+          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.6.0.Final/lib/required/slf4j-api-1.6.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -210,7 +111,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.5.0-Final/lib/jpa/hibernate-jpa-2.0-api-1.0.0.Final.jar!/" />
+          <root url="jar://D:/tools/testng/testng-5.14.6/testng-5.14.6.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -219,7 +120,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.5.0-Final/hibernate3.jar!/" />
+          <root url="jar://D:/tools/apache-log4j-1.2.15/log4j-1.2.15.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -228,7 +129,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.5.0-Final/lib/required/javassist-3.9.0.GA.jar!/" />
+          <root url="jar://D:/tools/slf4j-1.6.1/slf4j-log4j12-1.6.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -237,7 +138,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.5.0-Final/lib/required/commons-collections-3.1.jar!/" />
+          <root url="jar://D:/tools/slf4j-1.6.1/slf4j-api-1.6.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -246,7 +147,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.5.0-Final/lib/required/jta-1.1.jar!/" />
+          <root url="jar://D:/tools/spring/spring-framework-3.0.5.RELEASE/dist/org.springframework.transaction-3.0.5.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -255,7 +156,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.5.0-Final/lib/required/dom4j-1.6.1.jar!/" />
+          <root url="jar://D:/tools/spring/spring-framework-3.0.5.RELEASE/dist/org.springframework.jdbc-3.0.5.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -264,7 +165,61 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/hibernate/hibernate-distribution-3.5.0-Final/lib/required/slf4j-api-1.5.8.jar!/" />
+          <root url="jar://D:/tools/spring/spring-framework-3.0.5.RELEASE/dist/org.springframework.orm-3.0.5.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/tools/spring/spring-framework-3.0.5.RELEASE/dist/org.springframework.aop-3.0.5.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/tools/spring/spring-framework-3.0.5.RELEASE/dist/org.springframework.context-3.0.5.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/tools/spring/spring-framework-3.0.5.RELEASE/dist/org.springframework.core-3.0.5.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/tools/spring/spring-framework-3.0.5.RELEASE/dist/org.springframework.expression-3.0.5.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/tools/spring/spring-framework-3.0.5.RELEASE/dist/org.springframework.beans-3.0.5.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/tools/spring/spring-framework-3.0.5.RELEASE/dist/org.springframework.asm-3.0.5.RELEASE.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
