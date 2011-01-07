@@ -27,7 +27,7 @@
   </bean>
 
   <bean id="dataServer" class="com.gydoc.xmh.standalone.dsimpl.DerbyDataServer" init-method="start"
-        destroy-method="stop" depends-on="messageSource "/>
+        destroy-method="stop" depends-on="messageSource"/>
 
   <bean abstract="true" id="serviceBase">
     <property name="sessionFactory" ref="sessionFactory"/>

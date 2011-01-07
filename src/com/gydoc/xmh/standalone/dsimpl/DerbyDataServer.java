@@ -1,5 +1,6 @@
 package com.gydoc.xmh.standalone.dsimpl;
 
+import com.gydoc.xmh.SQLUtil;
 import com.gydoc.xmh.datasource.DataServer;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -50,34 +51,11 @@ public class DerbyDataServer implements DataServer {
 
     private void initDB(Connection conn) throws SQLException {
         try {
-            conn.setAutoCommit(false);
             setDataBaseProperty("derby.connection.requireAuthentication", "true", conn);
             setDataBaseProperty("derby.authentication.provider", "BUILTIN", conn);
             setDataBaseProperty(userNamePropertyName, userPassword, conn);
             setDataBaseProperty("derby.database.propertiesOnly", "true", conn);
-
-            
-            InputStream sqlFileStream = getClass().getClassLoader().getResourceAsStream("db/derby/init.sql");
-            StringBuilder sb = new StringBuilder();
-            InputStreamReader isr = new InputStreamReader(sqlFileStream, "UTF-8");
-            int bufferSize = 1024 * 1024;
-            char[] buffer = new char[bufferSize];
-            int index;
-            while ((index = isr.read(buffer, 0, bufferSize)) != -1) {
-                sb.append(buffer, 0, index);
-            }
-            isr.close();
-            Statement stat = conn.createStatement();
-            String sqlsStr = sb.toString();
-            String[] sqls = sqlsStr.split("\\@\\@\\$\\$\\%\\%;");
-            for (String s : sqls) {
-                if (s.trim().equals("")) {
-                    continue ;
-                }
-                stat.addBatch(s);
-            }
-            stat.executeBatch();
-            conn.commit();
+			SQLUtil.executeBatch(conn, getClass().getClassLoader().getResourceAsStream("db/derby/init.sql"));
         } catch (SQLException e) {
             conn.rollback();
             throw e;

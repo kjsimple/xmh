@@ -1,6 +1,8 @@
 package com.gydoc.xmh;
 
 import com.gydoc.xmh.service.InitDataService;
+import java.io.IOException;
+import java.sql.SQLException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -17,8 +19,12 @@ public class SpringUtil {
         springCtx.registerShutdownHook();
 
         InitDataService iService = (InitDataService) springCtx.getBean("initData");
-        iService.initData();
-    }
+		try {
+			iService.initData();
+		} catch (Exception e) {
+			throw new RuntimeException("Could not initialize the database for first startup.");
+		}
+	}
     
     private SpringUtil() {
         
