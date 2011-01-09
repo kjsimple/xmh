@@ -6,15 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcdbe858-e77f-4270-87b6-168ae67fcb11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/gydoc/xmh/SQLUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/db/derby/init-data.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gydoc/xmh/SpringUtil.java" afterPath="$PROJECT_DIR$/src/com/gydoc/xmh/SpringUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gydoc/xmh/serviceImpl/InitDataServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/gydoc/xmh/serviceImpl/InitDataServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gydoc/xmh/service/InitDataService.java" afterPath="$PROJECT_DIR$/src/com/gydoc/xmh/service/InitDataService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gydoc/xmh/standalone/dsimpl/DerbyDataServer.java" afterPath="$PROJECT_DIR$/src/com/gydoc/xmh/standalone/dsimpl/DerbyDataServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gydoc/xmh/widget/login/LoginDialog.java" afterPath="$PROJECT_DIR$/src/com/gydoc/xmh/widget/login/LoginDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/spring.xml" afterPath="$PROJECT_DIR$/src/spring.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.properties" afterPath="$PROJECT_DIR$/build.properties" />
     </list>
     <ignored path="xmh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,6 +28,19 @@
   <component name="DebuggerManager">
     <line_breakpoints>
       <breakpoint url="file://$PROJECT_DIR$/src/com/gydoc/xmh/serviceImpl/UserServiceImpl.java" line="19" class="com.gydoc.xmh.serviceImpl.UserServiceImpl" package="com.gydoc.xmh.serviceImpl">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/login/LoginDialog.java" line="139" class="com.gydoc.xmh.widget.login.LoginDialog" package="com.gydoc.xmh.widget.login">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -114,10 +120,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="init.sql" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="init.sql" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/db/derby/init.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="20" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.28947368">
+            <state line="23" column="48" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginDialog.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/login/LoginDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="94" column="30" selection-start="3214" selection-end="3214" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/serviceImpl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="45" selection-start="688" selection-end="688" vertical-scroll-proportion="0.4548495">
               <folding />
             </state>
           </provider>
@@ -145,9 +171,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/SQLUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="33" column="24" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -646,24 +670,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1024" height="708" extended-state="0" />
+    <frame x="-4" y="-4" width="1288" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249742" sideWeight="0.6583184" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.470483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54203933" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32737032" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249742" sideWeight="0.6583184" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249742" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249742" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54203933" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5054432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.470483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249742" sideWeight="0.659375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39892665" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -713,118 +737,94 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/serviceImpl/ServiceBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="203" selection-end="203" vertical-scroll-proportion="0.2631579">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/SpringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="30" selection-start="700" selection-end="700" vertical-scroll-proportion="0.4473684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/AccountClassificationGen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="332" selection-end="332" vertical-scroll-proportion="0.18882467">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/datasource/DataServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="18" selection-start="64" selection-end="64" vertical-scroll-proportion="0.13157895">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/standalone/dsimpl/DerbyDataServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="36" selection-start="571" selection-end="571" vertical-scroll-proportion="0.16377649">
-          <folding />
-        </state>
+        <state line="20" column="36" selection-start="571" selection-end="571" vertical-scroll-proportion="0.16377649" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/I18NMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="124" selection-end="124" vertical-scroll-proportion="0.18421052">
-          <folding />
-        </state>
+        <state line="8" column="13" selection-start="124" selection-end="124" vertical-scroll-proportion="0.18421052" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/service/InitDataService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="10" column="16" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://C:/jdk1.6.0/src.zip!/java/net/URLConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="777" column="23" selection-start="30956" selection-end="30956" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
+        <state line="777" column="23" selection-start="30956" selection-end="30956" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
     <entry file="jar://C:/jdk1.6.0/src.zip!/java/net/URL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1009" column="35" selection-start="37528" selection-end="37528" vertical-scroll-proportion="0.35902256">
-          <folding />
-        </state>
+        <state line="1009" column="35" selection-start="37528" selection-end="37528" vertical-scroll-proportion="0.35902256" />
       </provider>
     </entry>
     <entry file="jar://C:/jdk1.6.0/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1194" column="38" selection-start="43167" selection-end="43167" vertical-scroll-proportion="0.41165414">
-          <folding />
-        </state>
+        <state line="1194" column="38" selection-start="43167" selection-end="43167" vertical-scroll-proportion="0.41165414" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="76" selection-start="567" selection-end="567" vertical-scroll-proportion="0.2631579" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/derby/init-data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="52" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="55" selection-start="4182" selection-end="4182" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="117" column="55" selection-start="4182" selection-end="4182" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/serviceImpl/InitDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/SQLUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="24" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0">
+        <state line="33" column="24" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/derby/init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="48" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/LedgerComboboxAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="92" selection-end="92" vertical-scroll-proportion="0.19899665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/jdk1.6.0/src.zip!/java/awt/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="894" column="16" selection-start="36238" selection-end="36238" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/login/LoginDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="30" selection-start="3214" selection-end="3214" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/serviceImpl/InitDataServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/serviceImpl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="76" selection-start="567" selection-end="567" vertical-scroll-proportion="0.2631579">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/derby/init-data.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="52" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/derby/init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="20" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.28947368">
+        <state line="21" column="45" selection-start="688" selection-end="688" vertical-scroll-proportion="0.4548495">
           <folding />
         </state>
       </provider>
