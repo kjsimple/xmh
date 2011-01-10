@@ -12,25 +12,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://D:/tools/derby/db-derby-10.5.3.0-bin/lib/derby.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://D:/tools/aopalliance/aopalliance1.0/aopalliance.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/tools/derby/db-derby-10.5.3.0-bin/lib/derbynet.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -220,6 +202,24 @@
       <library>
         <CLASSES>
           <root url="jar://D:/tools/spring/spring-framework-3.0.5.RELEASE/dist/org.springframework.asm-3.0.5.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/tools/derby/db-derby-10.7.1.1-bin/lib/derby.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/tools/derby/db-derby-10.7.1.1-bin/lib/derbynet.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

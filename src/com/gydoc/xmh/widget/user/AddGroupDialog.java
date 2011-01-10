@@ -93,9 +93,4 @@ public class AddGroupDialog extends XMHDialog {
         buttonsPanel.add(cancelButton, c);
     }
 
-    @Override
-    public void escapePressed() {
-        dispose();
-    }
-
 }

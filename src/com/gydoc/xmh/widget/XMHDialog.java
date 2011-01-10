@@ -86,7 +86,9 @@ public abstract class XMHDialog extends JDialog {
         super(owner, title, modalityType, gc);
     }
     
-    public abstract void escapePressed();
+    public void escapePressed() {
+		dispose();
+	}
 
     @Override
     protected void dialogInit() {

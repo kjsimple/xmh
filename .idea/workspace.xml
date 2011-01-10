@@ -6,8 +6,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcdbe858-e77f-4270-87b6-168ae67fcb11" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/gydoc/xmh/UIConstant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/AddUserDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.properties" afterPath="$PROJECT_DIR$/build.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/i18n/com/gydoc/xmh/message.properties" afterPath="$PROJECT_DIR$/i18n/com/gydoc/xmh/message.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gydoc/xmh/message.properties" afterPath="$PROJECT_DIR$/src/com/gydoc/xmh/message.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gydoc/xmh/widget/XMHDialog.java" afterPath="$PROJECT_DIR$/src/com/gydoc/xmh/widget/XMHDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/AddGroupDialog.java" afterPath="$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/AddGroupDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/ChangePasswordDialog.java" afterPath="$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/ChangePasswordDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/ManageUserDialog.java" afterPath="$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/ManageUserDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xmh.iml" afterPath="$PROJECT_DIR$/xmh.iml" />
     </list>
     <ignored path="xmh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,19 +35,6 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/gydoc/xmh/serviceImpl/UserServiceImpl.java" line="19" class="com.gydoc.xmh.serviceImpl.UserServiceImpl" package="com.gydoc.xmh.serviceImpl">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/login/LoginDialog.java" line="139" class="com.gydoc.xmh.widget.login.LoginDialog" package="com.gydoc.xmh.widget.login">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -101,8 +96,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -111,66 +106,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="init-data.sql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db/derby/init-data.sql">
+      <file leaf-file-name="ManageUserDialog.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/ManageUserDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="52" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0">
+            <state line="46" column="39" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="init.sql" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="User.hbm.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/domain/User.hbm.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="27" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.sql" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/db/derby/init.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="48" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
+            <state line="19" column="24" selection-start="464" selection-end="464" vertical-scroll-proportion="0.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginDialog.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/login/LoginDialog.java">
+      <file leaf-file-name="AppMain.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/AppMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="30" selection-start="3214" selection-end="3214" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/serviceImpl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="45" selection-start="688" selection-end="688" vertical-scroll-proportion="0.4548495">
+            <state line="41" column="0" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
+      <file leaf-file-name="AddUserDialog.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/AddUserDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="55" selection-start="4182" selection-end="4182" vertical-scroll-proportion="0.0">
+            <state line="4" column="19" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InitDataServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/serviceImpl/InitDataServiceImpl.java">
+      <file leaf-file-name="UserService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
+            <state line="10" column="14" selection-start="166" selection-end="171" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SQLUtil.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/SQLUtil.java">
+      <file leaf-file-name="message.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/i18n/com/gydoc/xmh/message.properties">
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="24" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0">
+            <state line="3" column="13" selection-start="62" selection-end="62" vertical-scroll-proportion="-2.1">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UIConstant.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/UIConstant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="17" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChangePasswordDialog.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/ChangePasswordDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="134" column="0" selection-start="4663" selection-end="4663" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -190,13 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/gydoc/xmh/Test2.java" />
-        <option value="$PROJECT_DIR$/src/com/gydoc/xmh/widget/ledger/CreateLedgerStep2.java" />
-        <option value="$PROJECT_DIR$/src/com/gydoc/xmh/widget/ledger/CreateLedgerStep1.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/test/com/gydoc/xmh/uitest/spike/UITest.java" />
-        <option value="$PROJECT_DIR$/test/com/gydoc/xmh/functest/login/Test_Login.java" />
-        <option value="$PROJECT_DIR$/build.properties" />
         <option value="$PROJECT_DIR$/src/spring.xml" />
         <option value="$PROJECT_DIR$/src/com/gydoc/xmh/widget/login/LoginDialog.java" />
         <option value="$PROJECT_DIR$/src/com/gydoc/xmh/standalone/dsimpl/DerbyDataServer.java" />
@@ -206,6 +213,13 @@
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/db/derby/init-data.sql" />
         <option value="$PROJECT_DIR$/src/com/gydoc/xmh/serviceImpl/InitDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/gydoc/xmh/widget/XMHDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/AddGroupDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/ChangePasswordDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/ManageUserDialog.java" />
+        <option value="$PROJECT_DIR$/i18n/com/gydoc/xmh/message.properties" />
+        <option value="$PROJECT_DIR$/src/com/gydoc/xmh/UIConstant.java" />
+        <option value="$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/AddUserDialog.java" />
       </list>
     </option>
   </component>
@@ -244,6 +258,11 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Favorites" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -312,34 +331,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
-      </pane>
-      <pane id="Favorites" />
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane />
       </pane>
     </panes>
   </component>
@@ -359,9 +351,9 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -482,6 +474,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -507,24 +517,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -670,24 +662,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1288" height="778" extended-state="0" />
+    <frame x="0" y="0" width="1024" height="708" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32737032" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249742" sideWeight="0.6583184" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249742" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.470483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54203933" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5054432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32737032" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249742" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5054432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.470483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249742" sideWeight="0.659375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39892665" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -737,94 +729,117 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/standalone/dsimpl/DerbyDataServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="36" selection-start="571" selection-end="571" vertical-scroll-proportion="0.16377649" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/I18NMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="124" selection-end="124" vertical-scroll-proportion="0.18421052" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/service/InitDataService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/jdk1.6.0/src.zip!/java/net/URLConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="777" column="23" selection-start="30956" selection-end="30956" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/jdk1.6.0/src.zip!/java/net/URL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1009" column="35" selection-start="37528" selection-end="37528" vertical-scroll-proportion="0.35902256" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/jdk1.6.0/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1194" column="38" selection-start="43167" selection-end="43167" vertical-scroll-proportion="0.41165414" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="76" selection-start="567" selection-end="567" vertical-scroll-proportion="0.2631579" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/derby/init-data.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="52" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="55" selection-start="4182" selection-end="4182" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/serviceImpl/InitDataServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/SQLUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="24" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/derby/init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="48" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
+        <state line="33" column="24" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.3256262">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/LedgerComboboxAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/AddGroupDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="92" selection-end="92" vertical-scroll-proportion="0.19899665">
+        <state line="93" column="5" selection-start="2871" selection-end="2871" vertical-scroll-proportion="0.7631579">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/ledger/CreateLedgerWizard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="16" selection-start="1481" selection-end="1481" vertical-scroll-proportion="0.33270678">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/XMHDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="22" selection-start="552" selection-end="552" vertical-scroll-proportion="0.18421052">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/jdk1.6.0/src.zip!/java/awt/Container.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="894" column="16" selection-start="36238" selection-end="36238" vertical-scroll-proportion="0.33333334">
+        <state line="925" column="16" selection-start="37962" selection-end="37962" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="28" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/ChangePasswordDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="0" selection-start="4663" selection-end="4663" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/login/LoginDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="30" selection-start="3214" selection-end="3214" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="46" column="15" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.4473684">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/serviceImpl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/ManageUserDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="45" selection-start="688" selection-end="688" vertical-scroll-proportion="0.4548495">
+        <state line="46" column="39" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/domain/User.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="27" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/UIConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="17" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/AppMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/com/gydoc/xmh/message.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="62" selection-end="62" vertical-scroll-proportion="-2.1">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/widget/user/AddUserDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="19" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gydoc/xmh/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="14" selection-start="166" selection-end="171" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/derby/init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="24" selection-start="464" selection-end="464" vertical-scroll-proportion="0.5">
           <folding />
         </state>
       </provider>

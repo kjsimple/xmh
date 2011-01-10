@@ -133,9 +133,4 @@ public class ChangePasswordDialog extends XMHDialog {
         setDefaultButton(okButton);
     }
 
-    @Override
-    public void escapePressed() {
-        dispose();
-    }
-
 }

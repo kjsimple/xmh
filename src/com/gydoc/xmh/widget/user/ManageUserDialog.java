@@ -1,5 +1,6 @@
 package com.gydoc.xmh.widget.user;
 
+import com.gydoc.xmh.AppMain;
 import com.gydoc.xmh.I18NMessage;
 import com.gydoc.xmh.widget.XMHDialog;
 import java.awt.Frame;
@@ -60,7 +61,7 @@ public class ManageUserDialog extends XMHDialog {
         addUser.setMnemonic('U');
         addUser.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-
+				new AddUserDialog(AppMain.getInstance().getFrame(), true).setVisible(true);
             }
         });
         c.gridx = 0;
@@ -88,11 +89,6 @@ public class ManageUserDialog extends XMHDialog {
         c.weighty = 1;
         groupPane.setViewportView(groupTree);
         userAndGroup.add(groupPane, c);
-    }
-
-    @Override
-    public void escapePressed() {
-        dispose();
     }
     
 }
